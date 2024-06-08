@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* For vertical scrollbar */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ffd700;
+  border-radius: 10px;
+}

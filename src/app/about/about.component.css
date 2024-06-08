@@ -1,0 +1,77 @@
+  #back {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: -2;
+    
+  }
+  #back-photo {
+    height: 350px;
+    width: 250px;
+    border: 8px solid #7209b7;
+    position: fixed;
+    left: 20%;
+    bottom: 20%;
+  }
+  #image {
+    border: 8px solid #ffd60a;
+    height: 350px;
+    width: 250px;
+    z-index: 1;
+    position: fixed;
+    bottom: 28%;
+    left: 25%;
+    background-image: url("https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihahs3Qf-aRnl9qLQL0baTISb4gWIvXbnbDUtKWRjRMPM_7kEVUT81lIlXRliz5T7fBFiYll5wMxU4NnidRSqYmRR6IWGgrkGIA=w1920-h937-rw-v1");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 8px 8px 20px black;
+  }
+  #about {
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    height: 350px;
+    width: 500px;
+    color: white;
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-text {
+    padding: 35px 0px 0px 0px;
+  }
+  #not-main-text {
+    padding: 35px 0px 0px 0px;
+  }
+  #about-me {
+    height: auto;
+    width: 166px;
+    font-size: xx-large;
+    font-weight: 900;
+    border-bottom: 4px solid #ffd60a;
+  }
+  #b {
+    padding: 35px 0px 0px 0px;
+    display: flex;
+    gap: 1rem;
+  }
+  #hire {
+    background-color: #ffd60a;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+    cursor: pointer;
+  }
+  #view {
+    height: 40px;
+    width: 170px;
+    border: 2px solid #ffd60a;
+    border-radius: 4px;
+    background-color: black;
+    color: #ffd60a;
+    cursor: pointer;
+  }
+  
