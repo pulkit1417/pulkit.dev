@@ -26,7 +26,7 @@
   font-size: xx-large;
   font-weight: bolder;
   color: white;
-  line-height: 1.2; /* Adjust line-height for better spacing */
+  line-height: 1.2; 
 }
 
 #two {
@@ -58,8 +58,7 @@ h2 {
 #y2 {
   background-color: #ffd60a;
   height: 100vh;
-  width: 47vw;
-  margin-right:0.1rem;
+  width: 48vw;
 }
 #y2-button {
   background-color: black;
