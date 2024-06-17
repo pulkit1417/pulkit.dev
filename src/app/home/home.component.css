@@ -11,7 +11,7 @@
   font-weight: bolder;
   color: white;
   padding: 50px;
-  background-color: black;
+  background-color: #1a1a1a;
   height: auto;
   width: 35rem;
   overflow: hidden;
@@ -49,6 +49,7 @@ h2 {
   transition: all 0.5s ease;
   cursor: pointer;
   margin-bottom: 6rem;
+  color:#1a1a1a;
 }
 
 #b-button:hover {
@@ -61,7 +62,7 @@ h2 {
   width: 48vw;
 }
 #y2-button {
-  background-color: black;
+  background-color: #1a1a1a;
   border: none;
   color: white;
   font-size: medium;
@@ -70,7 +71,7 @@ h2 {
   width: 170px;
   position: absolute;
   right: 250px;
-  top: 545px;
+  top: 565px;
   transition: all 0.5s ease;
   cursor: pointer;
 }

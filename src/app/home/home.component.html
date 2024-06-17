@@ -8,44 +8,21 @@ I am passionate about solving
 coding problems through
 human-centered design.
 Curious by nature and 
-business-minded.</pre>
-    <br /><br /><br />
-    <a routerLink="contact"
-      ><button id="b-button">Reach out to me</button></a
+business-minded.</pre
     >
+    <br /><br /><br />
+    <a routerLink="contact"><button id="b-button">Reach out to me</button></a>
   </div>
   <div id="y2">
     <div class="marquee-div">
       <div class="project-container">
         <div class="marquee">
+          @for (project of projects; track $index) {
           <div class="project-card">
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZi2CkDdwIZi7w_9awU9TrSqfXgo9cREpkZrTTVYT0YLv5EQ0wGFe-qoq6HhVpgM3Wj5PoP20t9sEeQioY0UuBTts2cbV6o80s=w1920-h937-rw-v1" alt="Project 1" />
-            <div class="project-card-content">Ecommerce Project</div>
+            <img src="{{ project.image }}" alt="Project 1" />
+            <div class="project-card-content">{{ project.name }}</div>
           </div>
-          <div class="project-card">
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaGW_hO11bjexR8mUyQs8Ou_sziHZPFXeITbOeZVI23QXMSRvYTOpV3IEAqSZa3OoqNAQ0CxMhq3IYH0jNBILGaOK8nfTV8iQ=w1920-h937-rw-v1" alt="Project 2" />
-            <div class="project-card-content">Personal Portfolio</div>
-          </div>
-          <div class="project-card">
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZqSD1_7VqzG9t_kra8sbc34aEb3UFdiahU6DlnuIDjPkMlH5xjLkoMEwUlCa5At0PgOD5F2TL7ygKBnWIPqKb0UjNP3I2hJg4=w1920-h937-rw-v1" alt="Project 3" />
-            <div class="project-card-content">Language Translator</div>
-          </div>
-          <div class="project-card">
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpiha7FuB1tdpNnHBfDVY1L_dcHf7rKzuCbaa4FeAtVN9tDfyak_i1WjY4RtuYOH4eDsdLba_uf0yUQ3VK7Cv4jDA9z_575JltN8o=w1920-h937-rw-v1" alt="Project 4" />
-            <div class="project-card-content">Weather Website</div>
-          </div>
-          <div class="project-card">
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbdcYQJbYA5KgpaAWiGfQk_uv-VMiOlSwPA4LZnYg9Foydnki95PmPBzfX-yXi_qh0nQsG2XcC6bAE5tAGpyOi-1P3__PpQUbI=w1920-h937-rw-v1" alt="Project 5" />
-            <div class="project-card-content">Admin Panel</div>
-          </div>
-          <div class="project-card">
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbvOvI0hHPWHgCdmZwZIiGubnhUm7gsSVyD_0uqRFQLp-DgQC87gtmk8b4Mnyv9my4wxEaP9609U1JtMVEooApP0Mn3uVe4Vak=w1920-h937-rw-v1" alt="Project 6" />
-            <div class="project-card-content">Tic-Tac-Toe</div>
-          </div>
-          <div class="project-card">
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbc7lJjgLWYV97ZaoKF84u6znF1HozNxC2UV_XcVc90ehHMbcoE07m4PEohnHTG2nqv2V2AezuCgyTK0URjVFIzbQ5DdVlzcE4=w1920-h937-rw-v1" alt="Project 7" />
-            <div class="project-card-content">SignIn Page</div>
-          </div>
+          }
         </div>
       </div>
     </div>

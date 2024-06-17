@@ -1,6 +1,6 @@
 header {
   background-color: #ffd700;
-  color: #000;
+  color: #1a1a1a;
   padding: 8px;
   text-align: center;
   position: fixed;
@@ -13,7 +13,7 @@ header {
   justify-content: center;
   padding: 40px 0;
   color: white;
-  background-color: #000;
+  background-color: #1a1a1a;
   min-width: 83vw;
   min-height: 82.55vh;
   margin-top: 50px;
@@ -58,7 +58,7 @@ header {
 
 .project-card-content a {
   background-color: #ffd700;
-  color: #000;
+  color: #1a1a1a;
   display: inline-block;
   padding: 10px 10px;
   text-decoration: none;
