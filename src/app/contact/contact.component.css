@@ -86,9 +86,6 @@
   color: #666666;
   cursor: not-allowed;
 }
-#send:hover {
-  scale: 1.1;
-}
 input {
   outline: none;
 }
