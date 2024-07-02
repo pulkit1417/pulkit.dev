@@ -9,7 +9,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  viewResume() {
-    window.open(' assets/Resume.pdf', '_blank');
+  openResume() {
+    const pdfUrl = 'assets/Resume.pdf';
+    window.open(pdfUrl, '_blank');
   }
 }
