@@ -6,17 +6,22 @@
       <div><a id="get">Get in Touch</a></div>
       <div><a id="feel">Feel Free to drop us a line below!</a></div>
       <br />
-      <div id="type">
-        <input id="name" type="text" placeholder="Your Name" /><br />
-        <input id="email" type="email" placeholder="Your Email" /><br />
+      <form id="type" [formGroup]="ContactForm">
+        <input id="name" type="text" placeholder="Your Name" [formControl]="name" required=""/><br />
+        <div class="email-container">
+        <input id="email" type="email" placeholder="Your Email" [formControl]="email" required=""/><br />
+        <h5 class="red-txt" [hidden]="email.valid || email.untouched">Enter Valid Email.</h5>
+        </div>
         <textarea
           id="message"
-          type="text"
           placeholder="Type your message here..."
-        ></textarea
-        ><br /><br />
-        <button id="send">SEND</button>
-      </div>
+          [formControl]="message"
+        ></textarea><br/>
+        <div class="btn-container">
+          <button id="send" type="submit" [disabled]="ContactForm.invalid" (click)="send()">SEND</button>
+          <button class="btn-red" (click)="reset()">Reset</button>
+        </div>
+      </form>
     </div>
   </div>
   <div id="f-main">
@@ -27,7 +32,7 @@
         >&nbsp;SRM IST, Delhi-NCR<br /><br /><br
       /></a>
       <i class="fa-regular fa-envelope"></i>
-        <a href="mailto:gupta.pulkit2408@gmail.com?subject=Hello" target="_main" style="color: white; font-size: large">&nbsp;gupta.pulkit2408&#64;gmail.com
+        <a target="_main" style="color: white; font-size: large; text-decoration: none;">&nbsp;gupta.pulkit2408&#64;gmail.com
         <br /><br /><br
       /></a>
       <i class="fa-solid fa-phone"></i>
@@ -35,7 +40,7 @@
         >&nbsp;+91 9161562635<br /><br
       /></a>
       <i class="fa-brands fa-instagram"></i>
-      <a style="color: white; font-size: larger">&nbsp;&#64;pulkit_24</a>
+      <a style="color: white; font-size: larger;text-decoration: none;" >&nbsp;&#64;pulkit_24</a>
     </div>
   </div>
 </div>
