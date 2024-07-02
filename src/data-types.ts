@@ -1,6 +1,5 @@
-export interface Skill {
-    id: number;
-    style: string;
-    icon: string;
-    name: string;
+export interface contact {
+    name: string,
+    email: string,
+    message: string,
   }
