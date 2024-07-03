@@ -20,7 +20,10 @@ export class ContactComponent {
 
   email = new FormControl('', [Validators.required, Validators.email]);
 
-  name = new FormControl('', [Validators.required]);
+  name = new FormControl('', [
+    Validators.required,
+    Validators.minLength(2),
+  ]);
 
   message = new FormControl('', [
     Validators.required,
