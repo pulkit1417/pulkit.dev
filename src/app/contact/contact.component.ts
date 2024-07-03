@@ -35,10 +35,37 @@ export class ContactComponent {
   async send() {
     const success = await this.data.createMessage(this.ContactForm.value as contact);
     if (success) {
-      alert('Your message has been sent successfully!!');
       this.ContactForm.reset();
     } else {
       alert('There was an error sending your message. Please try again.');
+    }
+  }
+
+  private section: HTMLElement | null = null;
+  private overlay: HTMLElement | null = null;
+  private showBtn: HTMLElement | null = null;
+  private closeBtn: HTMLElement | null = null;
+
+  ngOnInit() {
+    this.section = document.querySelector("section");
+    this.overlay = document.querySelector(".overlay");
+    this.showBtn = document.querySelector(".send");
+    this.closeBtn = document.querySelector(".close-btn");
+
+    this.setupEventListeners();
+  }
+
+  private setupEventListeners() {
+    if (this.section && this.overlay && this.showBtn && this.closeBtn) {
+      this.showBtn.addEventListener("click", () => this.section!.classList.add("active"));
+
+      this.overlay.addEventListener("click", () => 
+        this.section!.classList.remove("active")
+      );
+
+      this.closeBtn.addEventListener("click", () => 
+        this.section!.classList.remove("active")
+      );
     }
   }
 }
