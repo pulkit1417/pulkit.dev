@@ -1,11 +1,8 @@
-body {
-  background-color: #1a1a1a;
-}
-
 .container {
   width: 100vw;
   min-height: 100vh;
   text-align: center;
+   background-color: #1a1a1a;
 }
 
 h1 {
