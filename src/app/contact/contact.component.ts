@@ -37,11 +37,6 @@ export class ContactComponent {
   });
   async send() {
     const success = await this.data.createMessage(this.ContactForm.value as contact);
-    if (success) {
-      this.ContactForm.reset();
-    } else {
-      alert('There was an error sending your message. Please try again.');
-    }
   }
 
   private section: HTMLElement | null = null;
@@ -70,5 +65,9 @@ export class ContactComponent {
         this.section!.classList.remove("active")
       );
     }
+  }
+
+  reset(){
+    this.ContactForm.reset();
   }
 }

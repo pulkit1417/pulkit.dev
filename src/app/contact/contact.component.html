@@ -7,7 +7,9 @@
       <div><a id="feel">Feel Free to drop me a line below!</a></div>
       <br />
       <form id="type" [formGroup]="ContactForm">
+        <div class="name-container">
         <input id="name" type="text" placeholder="Your Name" [formControl]="name" required=""/><br />
+        <h5 class="red-txt" [hidden]="name.valid || name.untouched">Enter real Name.</h5></div>
         <div class="email-container">
         <input id="email" type="email" placeholder="Your Email" [formControl]="email" required=""/><br />
         <h5 class="red-txt" [hidden]="email.valid || email.untouched">Enter Valid Email.</h5>
@@ -48,10 +50,10 @@
   <span class="overlay"></span>
   <div class="modal-box">
     <i class="fa-regular fa-circle-check"></i>
-    <h2>Done</h2>
+    <h2>Thank You {{ContactForm.value.name}}</h2>
     <h3>Your message has been sent successfully!!</h3>
     <div class="buttons">
-      <button class="close-btn">Ok, Close</button>
+      <button class="close-btn" (click)="reset()">Ok, Close</button>
     </div>
   </div>
 </section>

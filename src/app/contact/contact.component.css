@@ -40,10 +40,15 @@
 
 #name {
   height: 40px;
-  width: auto;
+  width: calc(100% - 3.3rem); 
+  max-width: 21rem; 
   padding-inline: 25px;
   background-color: #ffd60a;
   border: 0.2px solid #1a1a1a;
+}
+
+.name-container{
+  margin-bottom: 1.5rem;
 }
 
 #email {
