@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { initializeApp } from 'firebase/app';
-import { firebaseConfig } from '../firebase';
+import { environment } from '../environments/environment.template';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'My_Portfolio';
 
   constructor() {
-    initializeApp(firebaseConfig);
+    initializeApp(environment);
   }
 
 }
