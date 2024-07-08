@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:My_Portfolio": "node dist/my-portfolio/server/server.mjs",
-    "generate-env": "ts-node generate-env.ts",
-    "build-prod": "npm run generate-env && ng build --configuration production"
+    "generate-env": "node generate-env.js",
+  "build-prod": "npm run generate-env && ng build --configuration production"
   },
   "private": true,
   "dependencies": {
