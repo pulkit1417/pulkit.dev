@@ -2,7 +2,9 @@
   width: 100vw;
   min-height: 100vh;
   text-align: center;
-   background-color: #1a1a1a;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  margin-left: -0.rem;
 }
 
 h1 {
@@ -26,8 +28,8 @@ h2 {
 
 .skill-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-gap: 20px;
   width: 100%;
   max-width: 900px;
   margin-bottom: 40px;
