@@ -1,23 +1,23 @@
 # My Portfolio
 
-This is my personal portfolio website built with Angular, HTML, CSS, TypeScript, and Firebase. It showcases my projects, skills, and contact information.
+Welcome to my personal portfolio website! 🌟 Built with Angular, HTML, CSS, TypeScript, and Firebase, this site showcases my projects, skills, and contact information.
 
 ## Demo
 
-You can view the live demo of my portfolio [here](https://my-portfolio-omega-black-99.vercel.app).
+You can view the live demo of my portfolio [here](https://pulkit-portfolio-site.vercel.app/). 🌐
 
 ## Features
 
-- Responsive design<br>
-- Interactive project showcase<br>
-- Skill progression display<br>
-- Contact form<br>
-- Firebase integration for data storage<br>
+- 📱 Responsive design
+- 💡 Interactive project showcase
+- 📈 Skill progression display
+- 📧 Contact form
+- 🔗 Firebase integration for data storage
 
 ## Technologies Used
 
-- **Angular**: Version 18<br>
-- **HTML**: For structuring the web pages<br>
-- **CSS**: For styling the web pages<br>
-- **TypeScript**: For adding type safety and enhancing JavaScript<br>
-- **Firebase**: For backend services including Firestore, Authentication, and Hosting<br>
+- **Angular**: Version 18 🚀
+- **HTML**: For structuring the web pages 🏗️
+- **CSS**: For styling the web pages 🎨
+- **TypeScript**: For adding type safety and enhancing JavaScript 💻
+- **Firebase**: For backend services including Firestore, Authentication, and Hosting ☁️
