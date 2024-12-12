@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
 })
 export class AboutComponent {
   openResume() {
-    const pdfUrl = 'assets/Resume.pdf';
+    const pdfUrl = 'assets/pulkit_gupta_resume.pdf';
     window.open(pdfUrl, '_blank');
   }
 }
