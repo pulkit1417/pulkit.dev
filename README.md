@@ -141,20 +141,6 @@ npm run build
 firebase deploy
 ```
 
-> Alternatively, deploy to [Vercel](https://vercel.com) with zero config — just import the repo.
-
----
-
-## 📬 Contact
-
-If you'd like to work together or just say hi:
-
-- **Email:** [guptapulkit756@gmail.com](mailto:guptapulkit756@gmail.com)
-- **LinkedIn:** [linkedin.com/in/pulkit1417](https://linkedin.com/in/pulkit1417)
-- **GitHub:** [github.com/pulkit1417](https://github.com/pulkit1417)
-- **Location:** Delhi-NCR, India 🇮🇳
-
----
 
 <div align="center">
 
