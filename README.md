@@ -12,7 +12,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-[**🌐 Live Site**](https://pulkit.dev) · [**📂 GitHub**](https://github.com/pulkit1417) · [**📄 Resume**](/public/assets/pulkit_gupta_resume.pdf)
+[**🌐 Live Site**](https://pulki1417.vercel.app/) · [**📂 GitHub**](https://github.com/pulkit1417) · [**📄 Resume**](/public/assets/pulkit_gupta_resume.pdf)
 
 </div>
 
@@ -20,7 +20,7 @@
 
 ## ✨ Overview
 
-This is the source code for **[pulkit.dev](https://pulkit.dev)** — my personal portfolio, built from scratch as a showcase of both my design sensibility and engineering depth. It's not a template; every animation, interaction, and layout decision has been deliberately crafted.
+This is the source code for **[pulki1417.vercel.app](https://pulki1417.vercel.app/)** — my personal portfolio, built from scratch as a showcase of both my design sensibility and engineering depth. It's not a template; every animation, interaction, and layout decision has been deliberately crafted.
 
 The site features a **Three.js animated background**, a **GSAP-powered loading screen**, a **scrolling glassmorphic navbar** that collapses into a centered pill, a **custom cursor**, and 14+ distinct scroll-triggered animations — all rendering at 60 fps.
 
