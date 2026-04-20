@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="public/assets/pulkit_gupta_resume.pdf" alt="Pulkit Gupta" width="100" style="border-radius: 50%;" />
-
 # ✦ pulkit.dev
 
 **A premium personal portfolio — engineered with obsession.**
