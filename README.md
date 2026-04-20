@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="public/assets/pulkit_gupta_resume.pdf" alt="Pulkit Gupta" width="100" style="border-radius: 50%;" />
 
-First, run the development server:
+# ✦ pulkit.dev
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**A premium personal portfolio — engineered with obsession.**
+
+[![Next.js](https://img.shields.io/badge/Next.js-16.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+[**🌐 Live Site**](https://pulkit.dev) · [**📂 GitHub**](https://github.com/pulkit1417) · [**📄 Resume**](/public/assets/pulkit_gupta_resume.pdf)
+
+</div>
+
+---
+
+## ✨ Overview
+
+This is the source code for **[pulkit.dev](https://pulkit.dev)** — my personal portfolio, built from scratch as a showcase of both my design sensibility and engineering depth. It's not a template; every animation, interaction, and layout decision has been deliberately crafted.
+
+The site features a **Three.js animated background**, a **GSAP-powered loading screen**, a **scrolling glassmorphic navbar** that collapses into a centered pill, a **custom cursor**, and 14+ distinct scroll-triggered animations — all rendering at 60 fps.
+
+---
+
+## 🚀 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Framework** | Next.js 16 (App Router) |
+| **Language** | TypeScript 5 |
+| **Styling** | Tailwind CSS 3 + custom CSS variables |
+| **3D / WebGL** | Three.js · `@react-three/fiber` · `@react-three/drei` |
+| **Animations** | GSAP 3 (ScrollTrigger · TextPlugin · CustomEase) · Framer Motion |
+| **Icons** | Lucide React · Font Awesome 6 |
+| **Font** | Poppins (Google Fonts, all weights) |
+| **Hosting** | Firebase Hosting |
+
+---
+
+## 🎨 Feature Highlights
+
+### 🖥️ Loading Screen
+- Three.js particle field with GSAP-orchestrated entrance
+- Smooth reveal into the main portfolio on load complete
+
+### 🧭 Navbar
+- Transparent on top → glassmorphic pill on scroll
+- Fully responsive with mobile drawer
+
+### 🌌 Hero Section
+- Layered GSAP timeline: badge → title → subtitle → CTAs → stats
+- Role **typewriter loop** cycling through `Full Stack Developer`, `Open Source Contributor`, `Cloud Enthusiast`, `Problem Solver`
+- **Parallax orbs** that drift with mouse position
+- **Magnetic CTA buttons** with elastic snap-back
+- Animated stat counters (LeetCode, Projects, CGPA)
+
+### 🃏 Project Cards
+- 3D tilt on hover (`rotateX` / `rotateY` via GSAP)
+- Glassmorphism card styling with border glow
+- "View More" toggle with staggered entry animations
+
+### 🏆 Certifications & Achievements
+- AWS Certified Cloud Practitioner card
+- LeetCode rank, GSSoC contribution, Connect-SRM co-founder highlight
+
+### 📬 Contact
+- Two-panel form: info panel (gradient) + form fields with staggered GSAP entry
+- Firebase-ready form handler
+
+### 🖱️ Custom Cursor
+- Replaces the default browser cursor with a fluid, interactive cursor
+
+---
+
+## 📁 Project Structure
+
+```
+pulkit.dev/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx        # Root layout — metadata, fonts, global providers
+│   │   ├── page.tsx          # Main single-page portfolio (all sections)
+│   │   └── globals.css       # Design tokens, glassmorphism utilities
+│   └── components/
+│       ├── Navbar.tsx        # Scroll-reactive glassmorphic navbar
+│       ├── LoadingScreen.tsx # Three.js + GSAP loading screen
+│       ├── ThreeBackground.tsx # Ambient WebGL background
+│       └── CustomCursor.tsx  # Custom magnetic cursor
+├── public/
+│   └── assets/               # Resume PDF and static assets
+├── firebase.json             # Firebase Hosting config
+├── next.config.ts
+└── tailwind.config.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- **Node.js** ≥ 18
+- **npm** ≥ 9
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# 1. Clone the repo
+git clone https://github.com/pulkit1417/pulkit.dev.git
+cd pulkit.dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 2. Install dependencies
+npm install
 
-## Deploy on Vercel
+# 3. Start the dev server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Create production build |
+| `npm run start` | Serve production build locally |
+| `npm run lint` | Run ESLint |
+
+---
+
+## 🚢 Deployment
+
+The site is deployed on **Firebase Hosting**.
+
+```bash
+# Build and deploy
+npm run build
+firebase deploy
+```
+
+> Alternatively, deploy to [Vercel](https://vercel.com) with zero config — just import the repo.
+
+---
+
+## 📬 Contact
+
+If you'd like to work together or just say hi:
+
+- **Email:** [guptapulkit756@gmail.com](mailto:guptapulkit756@gmail.com)
+- **LinkedIn:** [linkedin.com/in/pulkit1417](https://linkedin.com/in/pulkit1417)
+- **GitHub:** [github.com/pulkit1417](https://github.com/pulkit1417)
+- **Location:** Delhi-NCR, India 🇮🇳
+
+---
+
+<div align="center">
+
+Designed & built by **Pulkit Gupta** with ☕ and way too many GSAP timelines.
+
+*If you fork this, a star ⭐ would be really appreciated!*
+
+</div>
