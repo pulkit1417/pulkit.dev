@@ -145,3 +145,13 @@
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(90deg, #ffffff, #ffd700);
 }
+
+/* Typewriter cursor blink */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.typewriter-cursor {
+  animation: cursor-blink 0.75s step-start infinite;
+}
