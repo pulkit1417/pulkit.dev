@@ -85,7 +85,7 @@ export const allProjects: Project[] = [
     name: 'CodeBin',
     tech: 'TypeScript · Angular · Firebase',
     desc: 'Collaborative space for developers to share and discover code snippets. Simplifies managing and accessing snippets with a seamless, responsive experience.',
-    link: 'https://code-bin.vercel.app/',
+    link: 'https://code-bin1417.vercel.app/',
     featured: false,
   },
 ];
